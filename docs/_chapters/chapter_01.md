@@ -5,3 +5,4 @@ summary: >
 ---
 Hello, world! {{this.summary}} Test
 {{summary}} Test_1
+{{page.summary}} Test_2
