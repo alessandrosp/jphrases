@@ -5,7 +5,7 @@ layout: default
 {% for unit in site.units %}
 <div class="row">
   <a href={{ unit.url | relative_url }}>
-    <div class="col-12">
+    <div class="col-12 unit">
       <h2>{{ unit.name }}</h2>
       <p>{{ unit.summary }}</p>
     </div>
