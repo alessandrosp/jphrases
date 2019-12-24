@@ -3,5 +3,12 @@ title: JPhrases
 layout: default
 ---
 {% for unit in site.units %}
-<a href={{ unit.url | relative_url }}>{{ unit.name }} - {{ unit.summary }}
+<div class="row">
+  <a href={{ unit.url | relative_url }}>
+    <div class="col-12">
+      <h2>{{ unit.name }}</h2>
+      <p>{{ unit.summary }}</p>
+    </div>
+  </a>
+</div>
 {% endfor %}
