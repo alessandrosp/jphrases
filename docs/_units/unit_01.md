@@ -21,19 +21,23 @@ phrases:
 ---
 {% for phrase in page.phrases %}
 <div class="row">
-  <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      {% for token in phrase.tokens %}
-      <div class="col">
-          {% assign writings = "kanji, kana, romaji" | split: ", " %}
-          {% for writing in writings %}
-            <div class="row">
-              {{ token.[writing] }}
+  <div class="col-12">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <div class="row">
+          {% for token in phrase.tokens %}
+          <div class="col">
+              {% assign writings = "kanji, kana, romaji" | split: ", " %}
+              {% for writing in writings %}
+                <div class="row">
+                  {{ token.[writing] }}
+                </div>
+              {% endfor %}
             </div>
           {% endfor %}
         </div>
-      {% endfor %}
-      <a href="#" class="card-link">Show</a>
+        <a href="#" class="card-link">Show</a>
+      </div>
     </div>
   </div>
 </div>
