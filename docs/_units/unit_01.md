@@ -20,20 +20,21 @@ phrases:
           The particle は (pronounced [wa]) marks the topic of the sentence. In Japanese, two distinct particle are used to mark the topic and the subject of a sentence, respectively は and が. For the time being, you shouldn't be concerned over these differences as you can simply think of the word(s) preceding は as the subject of the phrase.
 ---
 {% for phrase in page.phrases %}
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    {% assign writings = "kanji, kana, romaji" | split: ", " %}
-    {% for writing in writings %}
-      <div class="row">
-        <div class="col-12">
-          {% for token in phrase.tokens %}
-            {{ token.[writing] }}
+<div class="row">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      {% for token in phrase.tokens %}
+      <div class="col-12">
+          {% assign writings = "kanji, kana, romaji" | split: ", " %}
+          {% for writing in writings %}
+            <div class="row">
+              {{ token.[writing] }}
+            </div>
           {% endfor %}
         </div>
-      </div>
-    {% endfor %}
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+      {% endfor %}
+      <a href="#" class="card-link">Show</a>
+    </div>
   </div>
 </div>
 {% endfor %}
