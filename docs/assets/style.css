@@ -1,0 +1,8 @@
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.token:hover {
+  background-color: #FF6961;
+  color: white;
+}
