@@ -1,4 +1,5 @@
 ---
+layout: default
 name: I'm...
 summary: >
   Just a test.
