@@ -1,8 +1,8 @@
 ---
 layout: default
-name: I'm...
+name: I am, you are...
 summary: >
-  Just a test.
+  In this unit you'll study predicative nominal and predicate adjectives, i.e. phrases where the subject is connected to a noun or an adjective via the verb to be. These are phrases such as [Edward is an Englishman] or [I'm tall].
 phrases:
   - meaning: I'm Kenji.
     note:
