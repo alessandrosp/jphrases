@@ -1,3 +1,3 @@
 {% for chapter in site.chapters %}
-{{ chapter.name }} {{ chapter.link }} {{ chapter.summary }}
+{{ chapter.name }} {{ chapter.url | relative_url }} {{ chapter.summary }}
 {% endfor %}
