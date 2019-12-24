@@ -27,6 +27,6 @@ body {
   background-color: #009EC0;
 }
 
-.unit-link:link .unit-link:visited .unit-link:hover .unit-link:active  {
+a.unit-link:link a.unit-link:visited a.unit-link:hover a.unit-link:active  {
   text-decoration: none;
 }
