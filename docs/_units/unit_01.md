@@ -24,7 +24,7 @@ phrases:
   <div class="card" style="width: 18rem;">
     <div class="card-body">
       {% for token in phrase.tokens %}
-      <div class="col-12">
+      <div class="col">
           {% assign writings = "kanji, kana, romaji" | split: ", " %}
           {% for writing in writings %}
             <div class="row">
