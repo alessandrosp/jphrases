@@ -3,5 +3,5 @@ title: JPhrases
 layout: default
 ---
 {% for chapter in site.chapters %}
-{{ chapter.name }} {{ chapter.url | relative_url }} {{ chapter.summary }}
+<a href={{ chapter.url | relative_url }}>{{ chapter.name }} - {{ chapter.summary }}
 {% endfor %}
