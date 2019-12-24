@@ -2,6 +2,6 @@
 title: JPhrases
 layout: default
 ---
-{% for chapter in site.chapters %}
-<a href={{ chapter.url | relative_url }}>{{ chapter.name }} - {{ chapter.summary }}
+{% for unit in site.units %}
+<a href={{ unit.url | relative_url }}>{{ chapter.name }} - {{ chapter.summary }}
 {% endfor %}
