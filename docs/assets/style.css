@@ -16,6 +16,7 @@ body {
 
 .unit {
   background-color: #00B7D9;
+  border-radius: 15px 50px;
   color: white;
   width: 100%;
 }
