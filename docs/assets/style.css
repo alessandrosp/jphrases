@@ -18,6 +18,8 @@ body {
   background-color: #00B7D9;
   border-radius: 15px 50px;
   color: white;
+  padding-top: 15px;
+  padding-bottom: 10px;
   width: 100%;
 }
 
