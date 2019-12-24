@@ -2,6 +2,13 @@ body {
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
+.container {
+  font-size: 105%;
+  margin-bottom: 100px;
+  max-width: 900px;
+  padding-top: 15px;
+}
+
 .token:hover {
   background-color: #FF6961;
   color: white;
