@@ -23,3 +23,7 @@ body {
 .unit:hover {
   background-color: #009EC0;
 }
+
+.unit a:link a:visited a:hover a:active {
+  text-decoration: none;
+}
