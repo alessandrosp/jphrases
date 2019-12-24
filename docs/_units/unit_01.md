@@ -21,6 +21,6 @@ phrases:
 ---
 {% for phrase in page.phrases %}
   {% for token in phrase.tokens %}
-    {{token.kanji} | {{token.kana} | {{token.romaji}
+    {{token.kanji}} | {{token.kana}} | {{token.romaji}}
   {% endfor %}
 {% endfor %}
