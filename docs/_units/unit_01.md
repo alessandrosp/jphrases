@@ -24,7 +24,7 @@ phrases:
   <div class="col-12">
     <h1 class="display-3">JPhrases</h1>
     <p>
-      <a href={{ site.url }}>Back</a>
+      <a href="#">Back</a>
     </p>
   </div>
 </div><br>
