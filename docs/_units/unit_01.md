@@ -23,13 +23,14 @@ phrases:
       - kanji: 健司
         kana: けんじ
         romaji: kenji
-        meaning: Kenji (noun)
-        notes: N/A
+        meaning: Kenji (name)
+        notes: >
+          Kenji is a popular Japanese name. Note that names in Japanese can be written in multiple ways; for example, [健司], [健治] and [健二] are all different writings for [Kenji](https://en.wikipedia.org/wiki/Kenji_(given_name)).
       - kanji: です
         kana: です
         romaji: desu
         meaning: to be
-        notes: N/A
+        notes: Verbs don't really conjugate in Japanese, so です here could be [am] as well as [are] or [is]. Also, because Japanese doesn't differentiate between present and future, it could also be [will]. As per usual, the context can help us decide among all these alternatives.
 ---
 <div class="row">
   <div class="col-12">
