@@ -38,7 +38,7 @@ phrases:
       <a href="{{ site.url }}">← Back</a>
     </p>
   </div>
-</div><br>
+</div>
 {% for phrase in page.phrases %}
 <div class="row">
   <div class="col-12">
