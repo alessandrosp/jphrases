@@ -62,7 +62,7 @@ phrases:
             </div>
           {% endfor %}
         </div>
-        <br>
+        <hr>
         <div class="row">
           <table class="table explanation">
             <thead class="thead-dark">
