@@ -18,6 +18,10 @@ body {
   margin-right: 15px;
 }
 
+.showable {
+  visibility: hidden;
+}
+
 .token:hover {
   background-color: #FF6961;
   color: white;
