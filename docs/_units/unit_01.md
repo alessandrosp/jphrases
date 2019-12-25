@@ -25,7 +25,7 @@ phrases:
         romaji: kenji
         meaning: Kenji (name)
         notes: >
-          Kenji is a popular Japanese name. Note that names in Japanese can be written in multiple ways; for example, [健司], [健治] and [健二] are all different writings for [Kenji](https://en.wikipedia.org/wiki/Kenji_(given_name)).
+          Kenji is a popular Japanese name. Note that names in Japanese can be written in multiple ways; for example, [健司], [健治] and [健二] are all different writings for Kenji.
       - kanji: です
         kana: です
         romaji: desu
