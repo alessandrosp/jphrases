@@ -4,9 +4,9 @@ layout: default
 ---
 <div class="row">
   <div class="col-12">
-    <h1>JPhrases</h1>
+    <h1 class="display-3">JPhrases</h1>
     <h2>What's this all about?</h2>
-    <p>JPhrases is a gamified tool to improve your Japanese by practiging with phrases rather than individual kanji or words. It's rather simple: try to translate each phrase in your head, when you're ready click on <code>Show</code> and get the correct answer plus additional information about the various elements in the sentence.</p>
+    <p>JPhrases is a gamified tool to improve your Japanese by practicing with phrases rather than individual kanji or words. It's rather simple: try to translate each phrase in your head, when you're ready click on <code>Show</code> and get the correct answer plus additional information about the various elements in the sentence.</p>
   </div>
 </div><br>
 <!-- Here you have the various units listed. -->
@@ -15,12 +15,12 @@ layout: default
     <h2>Units</h2>
     <p>Each unit has around 12 phrases for you to pratice. Once you've mastered all the sentences in a unit you can move to the next one. Note that the unit numbers (e.g., Unit 1) could change with time as more units are added.</p>
   </div>
-</div>
+</div><br>
 {% for unit in site.units %}
 <div class="row">
   <a href={{ unit.url | relative_url }} class="unit-link">
     <div class="col-12 unit">
-      <h2>{{ forloop.index }}: {{ unit.name }}</h2>
+      <h2>Unit {{ forloop.index }}: {{ unit.name }}</h2>
       <p>{{ unit.summary }}</p>
     </div>
   </a>
