@@ -19,7 +19,7 @@ body {
 }
 
 .showable {
-  visibility: none;
+  display: none;
 }
 
 .token:hover {
