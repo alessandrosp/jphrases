@@ -4,7 +4,8 @@ name: I am, you are...
 summary: >
   In this unit you'll study predicative nominal and predicate adjectives, i.e. phrases where the subject is connected to a noun or an adjective via the verb to be. These are phrases such as [Edward is an Englishman] or [I'm tall].
 phrases:
-  - meaning: I'm Kenji.
+  - text: 私は健司です。
+    translation: I'm Kenji.
     note:
     tokens:
       - kanji: 私
@@ -43,6 +44,9 @@ phrases:
   <div class="col-12">
     <div class="card">
       <div class="card-body">
+        <div class="alert alert-secondary text-center" role="alert">
+          {{ phrase.text }}
+        </div>
         <div class="row">
           {% for token in phrase.tokens %}
           <div class="col token">
