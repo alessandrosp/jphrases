@@ -42,7 +42,7 @@ phrases:
 {% for phrase in page.phrases %}
 <div class="row">
   <div class="col-12">
-    <div class="card">
+    <div class="card text-center">
       <div class="card-body">
         <div class="alert alert-secondary text-center" role="alert">
           {{ phrase.text }}
@@ -59,7 +59,7 @@ phrases:
             </div>
           {% endfor %}
         </div>
-        <a href="#" class="btn btn-primary btn-lg">Show</a>
+        <a href="#" class="btn btn-primary btn-lg" style="margin-top: 15px;">Show</a>
       </div>
     </div>
   </div>
