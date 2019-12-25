@@ -5,8 +5,8 @@ var utils = {
   },
 
   showExplanation: function() {
-    $(".showable").each(function() {
-      $(this).css("visibility", "visible");
+    $('.showable').each(function() {
+      $(this).css('display', 'initial');
     });
   },
 };
