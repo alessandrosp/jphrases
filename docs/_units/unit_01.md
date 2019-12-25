@@ -39,7 +39,7 @@ phrases:
               {% assign writings = "kanji, kana, romaji" | split: ", " %}
               {% for writing in writings %}
                 <div class="row">
-                  <p class="text-center">{{ token.[writing] }}</p>
+                  <p class="text-center" style="width: 100%;">{{ token.[writing] }}</p>
                 </div>
               {% endfor %}
             </div>
