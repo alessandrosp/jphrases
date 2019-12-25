@@ -18,7 +18,16 @@ phrases:
         romaji: wa
         meaning: N/A
         note: >
-          The particle は (pronounced [wa]) marks the topic of the sentence. In Japanese, two distinct particle are used to mark the topic and the subject of a sentence, respectively は and が. For the time being, you shouldn't be concerned over these differences as you can simply think of the word(s) preceding は as the subject of the phrase.
+          The particle は (pronounced [wa]) marks the topic of the sentence. In Japanese, two distinct particle are used to mark the topic and the subject of a sentence, respectively は and が. For the time being, you shouldn't be concerned over these       - kanji: 健司
+        kana: けんじ
+        romaji: kenji
+        meaning: Kenji (noun)
+        note:
+      - kanji: です
+        kana: です
+        romaji: desu
+        meaning: to be
+        note:
 ---
 <div class="row">
   <div class="col-12">
