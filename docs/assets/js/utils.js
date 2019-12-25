@@ -6,7 +6,7 @@ var utils = {
 
   showExplanation: function() {
     $('.showable').each(function() {
-      $(this).css('display', 'initial');
+      $(this).css('display', 'block');
     });
   },
 };
