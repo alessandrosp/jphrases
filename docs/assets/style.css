@@ -13,6 +13,11 @@ body {
   padding-top: 15px;
 }
 
+.explanation {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .token:hover {
   background-color: #FF6961;
   color: white;
