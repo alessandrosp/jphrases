@@ -47,6 +47,9 @@ phrases:
         <div class="alert alert-secondary text-center" role="alert">
           {{ phrase.text }}
         </div>
+        <div class="alert alert-primary text-center" role="alert">
+          {{ phrase.translation }}
+        </div>
         <div class="row">
           {% for token in phrase.tokens %}
           <div class="col token">
