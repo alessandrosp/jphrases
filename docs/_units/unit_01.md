@@ -47,7 +47,7 @@ phrases:
         <div class="alert alert-secondary text-center" role="alert">
           {{ phrase.text }}
         </div>
-        <div class="alert alert-primary text-center" role="alert">
+        <div class="alert alert-primary text-center showable" role="alert">
           {{ phrase.translation }}
         </div>
         <div class="row">
@@ -83,7 +83,7 @@ phrases:
             </tbody>
           </table>
         </div>
-        <a href="#" class="btn btn-primary btn-lg" style="margin-top: 15px;">Show</a>
+        <a href="#" onclick="utils.showExplanation();" class="btn btn-primary btn-lg" style="margin-top: 15px;">Show</a>
       </div>
     </div>
   </div>
