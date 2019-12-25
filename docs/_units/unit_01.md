@@ -45,6 +45,7 @@ phrases:
   <div class="col-12">
     <div class="card text-center">
       <div class="card-body">
+        <a onclick="utils.showExplanation();" class="btn btn-dark btn-lg btn-block" style="margin-top: 15px;">Click here to show the results.</a>
         <div class="alert alert-secondary text-center" role="alert">
           {{ phrase.text }}
         </div>
@@ -84,7 +85,6 @@ phrases:
             </tbody>
           </table>
         </div>
-        <a href="#" onclick="utils.showExplanation();" class="btn btn-primary btn-lg" style="margin-top: 15px;">Show</a>
       </div>
     </div>
   </div>
