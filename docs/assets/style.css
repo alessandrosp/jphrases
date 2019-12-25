@@ -2,6 +2,10 @@ body {
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
+.card {
+ border-style: none; 
+}
+
 .container {
   font-size: 105%;
   margin-bottom: 100px;
