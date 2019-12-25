@@ -64,7 +64,7 @@ phrases:
         </div>
         <hr>
         <div class="row">
-          <table class="table explanation">
+          <table class="table explanation showable">
             <thead class="thead-dark">
               <tr>
                 <th scope="col">Text</th>
