@@ -59,7 +59,7 @@ phrases:
             </div>
           {% endfor %}
         </div>
-        <a href="#" class="card-link">Show</a>
+        <a href="#" class="btn btn-primary btn-lg">Show</a>
       </div>
     </div>
   </div>
