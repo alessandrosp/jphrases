@@ -23,7 +23,7 @@ phrases:
 <div class="row">
   <div class="col-12">
     <h1 class="display-3">JPhrases</h1>
-    <p class="back">← Back</p>
+    <p class="back"><a href={{ relative_url }}>← Back</a></p>
   </div>
 </div><br>
 {% for phrase in page.phrases %}
