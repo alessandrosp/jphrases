@@ -20,10 +20,16 @@ phrases:
         note: >
           The particle は (pronounced [wa]) marks the topic of the sentence. In Japanese, two distinct particle are used to mark the topic and the subject of a sentence, respectively は and が. For the time being, you shouldn't be concerned over these differences as you can simply think of the word(s) preceding は as the subject of the phrase.
 ---
+<div class="row">
+  <div class="col-12">
+    <h1 class="display-3">JPhrases</h1>
+    <p class="back">← Back</p>
+  </div>
+</div><br>
 {% for phrase in page.phrases %}
 <div class="row">
   <div class="col-12">
-    <div class="card" style="width: 18rem;">
+    <div class="card">
       <div class="card-body">
         <div class="row">
           {% for token in phrase.tokens %}
