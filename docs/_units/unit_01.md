@@ -6,30 +6,30 @@ summary: >
 phrases:
   - text: 私は健司です。
     translation: I'm Kenji.
-    note:
+    notes:
     tokens:
       - kanji: 私
         kana: わたし
         romaji: watashi
         meaning: I
-        note: >
+        notes: >
           Equivalent to the first-person singular pronoun [I].  Note that in Japanese the subject is often omitted when it's clear from the contenxt. So the phrase [Kenji desu] would have been equally correct.
       - kanji: は
         kana: は
         romaji: wa
         meaning: N/A
-        note: >
+        notes: >
           The particle は (pronounced [wa]) marks the topic of the sentence. In Japanese, two distinct particle are used to mark the topic and the subject of a sentence, respectively は and が. For the time being, you shouldn't be concerned over these.
       - kanji: 健司
         kana: けんじ
         romaji: kenji
         meaning: Kenji (noun)
-        note: N/A
+        notes: N/A
       - kanji: です
         kana: です
         romaji: desu
         meaning: to be
-        note: N/A
+        notes: N/A
 ---
 <div class="row">
   <div class="col-12">
@@ -59,35 +59,24 @@ phrases:
             </div>
           {% endfor %}
         </div>
+        <br>
         <div class="row">
           <table class="table">
             <thead class="thead-dark">
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">Text</th>
+                <th scope="col">Meaning</th>
+                <th scope="col">Notes</th>
               </tr>
             </thead>
             <tbody>
+              {% for token in phrase.tokens %}
               <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <td>{{ token.kanji }}</td>
+                <td>{{ token.meaning }}</td>
+                <td>{{ token.notes }}</td>
               </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
+              {% endfor %}
             </tbody>
           </table>
         </div>
