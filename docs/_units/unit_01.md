@@ -56,7 +56,7 @@ phrases:
             </a>
           </div>
         </div>
-        <div class="row">
+        <div class="row showable">
           <div class="col-6">
             <a
                href="#"
