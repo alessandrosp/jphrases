@@ -50,7 +50,7 @@ phrases:
             <a
                href="#"
                onclick="utils.showExplanation();"
-               class="btn btn-dark btn-lg btn-block"
+               class="btn btn-dark btn-lg btn-block explain"
                style="margin-top: 15px; margin-bottom: 15px;">
                 Show the r(e)sults.
             </a>
