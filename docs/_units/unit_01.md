@@ -45,7 +45,15 @@ phrases:
   <div class="col-12">
     <div class="card text-center">
       <div class="card-body">
-        <a href="#" onclick="utils.showExplanation();" class="btn btn-dark btn-lg btn-block" style="margin-top: 15px; margin-bottom: 15px;">Show the results.</a>
+        <div class="col-12">
+          <a href="#" onclick="utils.showExplanation();" class="btn btn-dark btn-lg btn-block" style="margin-top: 15px; margin-bottom: 15px;">Show the r(e)sults.</a>
+        </div>
+        <div class="col-6">
+          <a href="#" onclick="" class="btn btn-danger btn-lg btn-block" style="margin-top: 15px; margin-bottom: 15px;">I was (w)rong!</a>
+        </div>
+        <div class="col-6">
+          <a href="#" onclick="" class="btn btn-success btn-lg btn-block" style="margin-top: 15px; margin-bottom: 15px;">I was (r)ight!</a>
+        </div>
         <div class="alert alert-secondary text-center" role="alert">
           {{ phrase.text }}
         </div>
