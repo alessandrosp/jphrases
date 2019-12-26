@@ -19,7 +19,7 @@ phrases:
         romaji: wa
         meaning: N/A
         notes: >
-          The particle は (pronounced [wa]) marks the topic of the sentence. In Japanese, two distinct particle are used to mark the topic and the subject of a sentence, respectively は and が. For the time being, you shouldn't be concerned over these.
+          The particle は (pronounced [wa]) marks the topic of the sentence. In Japanese, two distinct particles are used to mark the topic and the subject of a sentence, respectively は and が. For the time being, you shouldn't be concerned over these.
       - kanji: 健司
         kana: けんじ
         romaji: kenji
@@ -30,7 +30,8 @@ phrases:
         kana: です
         romaji: desu
         meaning: to be
-        notes: Verbs don't really conjugate in Japanese, so です here could be [am] as well as [are] or [is]. Also, because Japanese doesn't differentiate between present and future, it could also be [will]. As per usual, the context can help us decide among all these alternatives.
+        notes: >
+          Verbs don't really conjugate in Japanese, so です could be [am] as well as [are] or [is]. Also, because Japanese doesn't differentiate between present and future, it could also be [will]. As per usual, context can help us decide among all these alternatives.
 ---
 <div class="row">
   <div class="col-12">
