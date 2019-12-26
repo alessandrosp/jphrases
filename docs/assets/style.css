@@ -2,6 +2,12 @@
   margin-top: 0px !important;
 }
 
+@media only screen and (max-width: 768px) {
+  .answer-button {
+    font-size: 100% !important;
+  }
+}
+
 .answer-buttons {
   padding-left: 15px;
   padding-right: 15px;
