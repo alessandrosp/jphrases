@@ -56,10 +56,10 @@ phrases:
             </a>
           </div>
         </div>
-        <div class="row showable" style="margin-top: 15px; margin-bottom: 15px;">
+        <div class="row showable answer-buttons" style="margin-top: 15px; margin-bottom: 15px;">
           <div class="btn-group btn-group-lg">
-            <button onclick="" type="button" class="btn btn-danger">I was (w)rong!</button>
-            <button onclick="" type="button" class="btn btn-success">I was (r)ight!</button>
+            <button onclick="" type="button" class="btn btn-danger answer-button">I was (w)rong!</button>
+            <button onclick="" type="button" class="btn btn-success answer-button">I was (r)ight!</button>
           </div>
         </div>
         <div class="alert alert-secondary text-center" role="alert">
