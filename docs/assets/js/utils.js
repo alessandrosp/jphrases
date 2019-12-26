@@ -8,6 +8,9 @@ var utils = {
     $('.showable').each(function() {
       $(this).css('display', 'block');
     });
+    $('.explain').each(function() {
+      $(this).css('display', 'none');
+    });
   },
 
 };
