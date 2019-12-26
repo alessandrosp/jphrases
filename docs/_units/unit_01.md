@@ -57,21 +57,9 @@ phrases:
           </div>
         </div>
         <div class="row showable" style="margin-top: 15px; margin-bottom: 15px;">
-          <div class="col-6">
-            <a
-               href="#"
-               onclick=""
-               class="btn btn-danger btn-lg btn-block">
-                I was (w)rong!
-            </a>
-          </div>
-          <div class="col-6">
-            <a
-               href="#"
-               onclick=""
-               class="btn btn-success btn-lg btn-block">
-                I was (r)ight!
-            </a>
+          <div class="btn-group btn-group-lg">
+            <button onclick="" type="button" class="btn btn-danger">I was (w)rong!</button>
+            <button onclick="" type="button" class="btn btn-success">I was (r)ight!</button>
           </div>
         </div>
         <div class="alert alert-secondary text-center" role="alert">
