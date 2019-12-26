@@ -56,13 +56,12 @@ phrases:
             </a>
           </div>
         </div>
-        <div class="row showable">
+        <div class="row showable" style="margin-top: 15px; margin-bottom: 15px;">
           <div class="col-6">
             <a
                href="#"
                onclick=""
-               class="btn btn-danger btn-lg btn-block"
-               style="margin-top: 15px; margin-bottom: 15px;">
+               class="btn btn-danger btn-lg btn-block">
                 I was (w)rong!
             </a>
           </div>
@@ -70,8 +69,7 @@ phrases:
             <a
                href="#"
                onclick=""
-               class="btn btn-success btn-lg btn-block"
-               style="margin-top: 15px; margin-bottom: 15px;">
+               class="btn btn-success btn-lg btn-block">
                 I was (r)ight!
             </a>
           </div>
