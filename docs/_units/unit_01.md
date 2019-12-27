@@ -70,11 +70,7 @@ phrases:
   </div>
 </div>
 {% for phrase in page.phrases %}
-{% if {{ forloop.index }} == 1 %}
   <div class="row phrase-active">
-{% else %}
-  <div class="row phrase-inactive">
-{% endif %} 
   <div class="col-12">
     <div class="card text-center">
       <div class="card-body">
