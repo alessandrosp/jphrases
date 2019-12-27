@@ -33,6 +33,10 @@ body {
   margin-right: 15px;
 }
 
+.last-row {
+  display: none;
+}
+
 .phrase-inactive {
   display: none;
 }
