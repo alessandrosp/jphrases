@@ -19,11 +19,16 @@ var utils = {
   
   markCorrect: function() {
     let active = $('.phrase-active').first();
-    let firstInactive = $('.phrase-inactive').first();
+    let firstInactive = active.next('.phrase-inactive');
     active.removeClass('phrase-active');
     active.addClass('phrase-inactive');
-    firstInactive.removeClass('phrase-inactive');
-    firstInactive.addClass('phrase-active');
+    if (firstInactive) {
+      firstInactive.removeClass('phrase-inactive');
+      firstInactive.addClass('phrase-active');
+    } else {
+      let lastRow = $('.last-row').first();
+      lastRow.css('display', 'block');
+    };
   },
 
 };
@@ -34,6 +39,8 @@ $(window).keydown(function(event) {
   if (event.which == 69) {
     utils.showExplanation();
   } else if (event.which == 82) {
+    // TODO(): We should check the Explain button is not visibile, because
+    // if it is then we shouldn't let this fire off.
     utils.markCorrect();
   } 
 });
