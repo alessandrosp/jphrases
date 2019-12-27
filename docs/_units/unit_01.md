@@ -147,7 +147,9 @@ phrases:
       <div class="card-body">
         <div class="row">
           <div class="col-12">
-            <p>Just a test.</p>
+            <p>You've done it! 🇯🇵🎉</p>
+            <p>You memorized all the phrases in this unit, well done. You're now officially ready to move to the next unit! Click on the button below to go back to the homepage and select a different unit.</p>
+            <a class="btn btn-outline-dark" href="{{ site.url }}" role="button">Back to the Homepage</a>
           </div>
         </div>
       </div>
