@@ -33,6 +33,10 @@ body {
   margin-right: 15px;
 }
 
+.phrase-inactive {
+  display: none;
+}
+
 .showable {
   display: none;
 }
