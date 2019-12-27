@@ -69,6 +69,7 @@ phrases:
     </p>
   </div>
 </div>
+<!-- Iterate through the various phrases available. -->
 {% for phrase in page.phrases %}
 {% if forloop.index == 1 %}
   <div class="row phrase-active">
@@ -133,6 +134,20 @@ phrases:
               {% endfor %}
             </tbody>
           </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Last card, only visible when all the phrases have been memorized. -->
+<div class="row last-row">
+  <div class="col-12">
+    <div class="card text-center">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12">
+            <p>Just a test.</p>
+          </div>
         </div>
       </div>
     </div>
