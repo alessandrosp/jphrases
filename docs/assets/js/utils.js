@@ -22,7 +22,7 @@ var utils = {
     let firstInactive = active.next('.phrase-inactive');
     active.removeClass('phrase-active');
     active.addClass('phrase-inactive');
-    if (firstInactive) {
+    if (firstInactive.length) {
       firstInactive.removeClass('phrase-inactive');
       firstInactive.addClass('phrase-active');
     } else {
