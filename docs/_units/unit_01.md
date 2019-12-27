@@ -139,6 +139,7 @@ phrases:
     </div>
   </div>
 </div>
+{% endfor %}
 <!-- Last card, only visible when all the phrases have been memorized. -->
 <div class="row last-row">
   <div class="col-12">
@@ -153,4 +154,3 @@ phrases:
     </div>
   </div>
 </div>
-{% endfor %}
