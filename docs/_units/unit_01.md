@@ -83,7 +83,7 @@ phrases:
           <div class="col-12">
             <a
                href="#"
-               onclick="utils.showExplanation();"
+               onclick="utils.toggleExplanation(showExplanation=true);"
                class="btn btn-dark btn-lg btn-block explain"
                style="margin-top: 15px; margin-bottom: 15px;">
                 Show the r(e)sults.
