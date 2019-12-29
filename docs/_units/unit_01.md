@@ -59,7 +59,7 @@ phrases:
         romaji: desu
         meaning: to be
         notes: >
-          It's fairly common is Japanese to refer to the person you're talking to using the name (instead of the pronoun [you]). So without additional context we can't know whether the sentence here should be translated as [Anna is a student] or [you are a student].
+          It's fairly common is Japanese to refer to the person you're talking to using their name (instead of the pronoun [you]). So without additional context we can't know whether the sentence here should be translated as [Anna is a student] or [you are a student]. Both are correct.
 ---
 <div class="row">
   <div class="col-12">
@@ -72,9 +72,9 @@ phrases:
 <!-- Iterate through the various phrases available. -->
 {% for phrase in page.phrases %}
 {% if forloop.index == 1 %}
-  <div class="row phrase-active">
+  <div class="row phrase-active not-remembered">
 {% else %}
-  <div class="row phrase-inactive">
+  <div class="row phrase-inactive not-remembered">
 {% endif %}
   <div class="col-12">
     <div class="card text-center">
@@ -115,6 +115,7 @@ phrases:
           {% endfor %}
         </div>
         <hr>
+        <!-- This table is only visible after the explain buttom has been pressed. -->
         <div class="row">
           <table class="table explanation showable">
             <thead class="thead-dark">
