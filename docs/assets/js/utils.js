@@ -20,6 +20,22 @@ var utils = {
   },
   
   /**
+   * Hide the explanation table and the results buttons, and show the explain button.
+   */
+  hideExplanation: function() {
+    $('.showable').each(function() {
+      if ($(this).parents('.phrase-active').length) {
+        $(this).css('display', 'none');
+      };
+    });
+    $('.explain').each(function() {
+      if ($(this).parents('.phrase-active').length) {
+        $(this).css('display', 'block');
+      };
+    });
+  },
+  
+  /**
    * Test whether the utils module has been loaded correctly.
    */
   testLog: function() {
@@ -54,6 +70,7 @@ var utils = {
   markWrong: function() {
     let active = $('.phrase-active').first();
     let nextInactive = active.next('.phrase-inactive.not-remembered');
+    hideExplanation();
     active.removeClass('phrase-active');
     active.addClass('phrase-inactive');
     //active.removeClass('not-remembered');
