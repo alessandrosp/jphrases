@@ -77,12 +77,14 @@ $(window).keydown(function(event) {
   if (event.which == 69) {
     utils.toggleExplanation(showExplanation=true);
   } else if (event.which == 82) {
-    // TODO(): We should check the Explain button is not visibile, because
-    // if it is then we shouldn't let this fire off.
-    utils.submitResponse(guessWasRight=true);
+    // Here and after we check whether the explain button is visible or not. If the
+    // explain button is still visible, these functions shouldn't be invoked.
+    if ($('.phrase-active').first().find('.explain').css('display') == 'none') {
+      utils.submitResponse(guessWasRight=true);
+    }
   } else if (event.which == 87) {
-    // TODO(): We should check the Explain button is not visibile, because
-    // if it is then we shouldn't let this fire off.
-    utils.submitResponse(guessWasRight=false);
+    if ($('.phrase-active').first().find('.explain').css('display') == 'none') {
+      utils.submitResponse(guessWasRight=false);
+    }
   }
 });
