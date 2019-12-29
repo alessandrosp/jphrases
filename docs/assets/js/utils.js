@@ -70,7 +70,7 @@ var utils = {
   markWrong: function() {
     let active = $('.phrase-active').first();
     let nextInactive = active.next('.phrase-inactive.not-remembered');
-    hideExplanation();
+    utils.hideExplanation();
     active.removeClass('phrase-active');
     active.addClass('phrase-inactive');
     //active.removeClass('not-remembered');
