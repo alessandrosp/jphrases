@@ -60,6 +60,33 @@ phrases:
         meaning: to be
         notes: >
           It's fairly common is Japanese to refer to the person you're talking to using their name (instead of the pronoun [you]). So without additional context we can't know whether the sentence here should be translated as [Anna is a student] or [you are a student]. Both are correct.
+  - text: アンナさんは会社員ではありません。
+    translation: Anna is not an employee.
+    notes:
+    tokens:
+      - kanji: アンナさん
+        kana: アンナさん
+        romaji: anna-san
+        meaning: Anna (name)
+        notes: >
+          Note how when we talk about someone else we always postpone a honorific to that person's name (here it's さん).
+      - kanji: は
+        kana: は
+        romaji: wa
+        meaning: N/A
+        notes: >
+          The particle は (pronounced [wa]) marks the topic/subject of the sentence.
+      - kanji: 会社員
+        kana: かいしゃいん
+        romaji: kaishain
+        meaning: employee
+        notes: N/A
+      - kanji: ではありません
+        kana: ではありません
+        romaji: dewa arimasen
+        meaning: not to be
+        notes: >
+          It's the negative form of です.
 ---
 <div class="row">
   <div class="col-12">
