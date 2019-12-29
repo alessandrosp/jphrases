@@ -92,7 +92,7 @@ phrases:
         </div>
         <div class="row showable answer-buttons" style="margin-top: 15px; margin-bottom: 15px;">
           <div class="btn-group btn-group-lg btn-block">
-            <button onclick="" type="button" class="btn btn-danger btn-block answer-button">I was (w)rong!</button>
+            <button onclick="utils.markWrong();" type="button" class="btn btn-danger btn-block answer-button">I was (w)rong!</button>
             <button onclick="utils.markCorrect();" type="button" class="btn btn-success btn-block answer-button">I was (r)ight!</button>
           </div>
         </div>
