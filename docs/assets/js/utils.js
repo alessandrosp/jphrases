@@ -43,38 +43,22 @@ var utils = {
   },
   
   /**
-   * Mark the phrase had having being remembered correctly.
+   * Hide the current phrase and show the next.
+   *
+   * If guessWasRight is True, then the active phrase is also
+   * marked as having being remembered and thus skipped in the future.
+   * @param {Boolean} guessWasRight - Whether the guess was right or not.
    */
-  markCorrect: function() {
-    let active = $('.phrase-active').first();
-    let nextInactive = active.next('.phrase-inactive.not-remembered');
-    active.removeClass('phrase-active');
-    active.addClass('phrase-inactive');
-    active.removeClass('not-remembered');
-    active.addClass('remembered');
-    if (nextInactive.length) {
-      nextInactive.removeClass('phrase-inactive');
-      nextInactive.addClass('phrase-active');
-    } else {
-      let firstInactive = $('.phrase-inactive.not-remembered').first();
-      if (firstInactive.length) {
-        firstInactive.removeClass('phrase-inactive');
-        firstInactive.addClass('phrase-active');
-      } else {
-        let lastRow = $('.last-row').first();
-        lastRow.css('display', 'block');
-      }
-    };
-  },
-  
-  markWrong: function() {
+  submitResponse: function(guessWasRight) {
     let active = $('.phrase-active').first();
     let nextInactive = active.next('.phrase-inactive.not-remembered');
     utils.hideExplanation();
     active.removeClass('phrase-active');
     active.addClass('phrase-inactive');
-    //active.removeClass('not-remembered');
-    //active.addClass('remembered');
+    if (guessWasRight) {
+      active.removeClass('not-remembered');
+      active.addClass('remembered');
+    }
     if (nextInactive.length) {
       nextInactive.removeClass('phrase-inactive');
       nextInactive.addClass('phrase-active');
@@ -100,10 +84,10 @@ $(window).keydown(function(event) {
   } else if (event.which == 82) {
     // TODO(): We should check the Explain button is not visibile, because
     // if it is then we shouldn't let this fire off.
-    utils.markCorrect();
+    utils.submitResponse(true);
   } else if (event.which == 87) {
     // TODO(): We should check the Explain button is not visibile, because
     // if it is then we shouldn't let this fire off.
-    utils.markWrong();
+    utils.submitResponse(false);
   }
 });
