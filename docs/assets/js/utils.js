@@ -1,36 +1,29 @@
 var utils = {
-
-  /**
-   * Show the explanation table and the results buttons, and hide the explain button.
-   */
-  showExplanation: function() {
-    // Iterate through all the showable elements, but
-    // only for the active phrase.
-    $('.showable').each(function() {
-      if ($(this).parents('.phrase-active').length) {
-        $(this).css('display', 'block');
-      };
-    });
-    // Hide the [Show me the results.] button.
-    $('.explain').each(function() {
-      if ($(this).parents('.phrase-active').length) {
-        $(this).css('display', 'none');
-      };
-    });
-  },
   
   /**
-   * Hide the explanation table and the results buttons, and show the explain button.
+   * Toggle the explanation table, the results buttons and the explain button.
+   * @param {Boolean} showExplanation - Whether to show or hide the explanation table.
    */
-  hideExplanation: function() {
+  toggleExplanation: function(showExplanation) {
+    // Iterate through all the showable elements (but only for
+    // the active phrase) and show/hide them according to showExplanation.
     $('.showable').each(function() {
       if ($(this).parents('.phrase-active').length) {
-        $(this).css('display', 'none');
+        if (showExplanation) {
+          $(this).css('display', 'block');
+        } else {
+          $(this).css('display', 'none');
+        }
       };
     });
+    // Hide or show the explain button.
     $('.explain').each(function() {
       if ($(this).parents('.phrase-active').length) {
-        $(this).css('display', 'block');
+        if () {
+          $(this).css('display', 'none');
+        } else {
+          $(this).css('display', 'block');   
+        }
       };
     });
   },
@@ -52,7 +45,7 @@ var utils = {
   submitResponse: function(guessWasRight) {
     let active = $('.phrase-active').first();
     let nextInactive = active.next('.phrase-inactive.not-remembered');
-    utils.hideExplanation();
+    utils.toggleExplanation(showExplanation=false);
     active.removeClass('phrase-active');
     active.addClass('phrase-inactive');
     if (guessWasRight) {
@@ -80,7 +73,7 @@ $(window).keydown(function(event) {
   // Get more information here: https://keycode.info/
   // 69: E
   if (event.which == 69) {
-    utils.showExplanation();
+    utils.toggleExplanation(showExplanation=true);
   } else if (event.which == 82) {
     // TODO(): We should check the Explain button is not visibile, because
     // if it is then we shouldn't let this fire off.
