@@ -1,11 +1,17 @@
 var utils = {
 
+  /**
+   * Show the explanation table and the results buttons, and hide the explain button.
+   */
   showExplanation: function() {
+    // Iterate through all the showable elements, but
+    // only for the active phrase.
     $('.showable').each(function() {
       if ($(this).parents('.phrase-active').length) {
         $(this).css('display', 'block');
       };
     });
+    // Hide the [Show me the results.] button.
     $('.explain').each(function() {
       if ($(this).parents('.phrase-active').length) {
         $(this).css('display', 'none');
@@ -13,21 +19,35 @@ var utils = {
     });
   },
   
+  /**
+   * Test whether the utils module has been loaded correctly.
+   */
   testLog: function() {
     console.log('This is just a test.')
   },
   
+  /**
+   * Mark the phrase had having being remembered correctly.
+   */
   markCorrect: function() {
     let active = $('.phrase-active').first();
-    let firstInactive = active.next('.phrase-inactive');
+    let nextInactive = active.next('.phrase-inactive.not-remembered');
     active.removeClass('phrase-active');
     active.addClass('phrase-inactive');
-    if (firstInactive.length) {
-      firstInactive.removeClass('phrase-inactive');
-      firstInactive.addClass('phrase-active');
+    active.removeClass('not-remembered');
+    active.addClass('remembered');
+    if (nextInactive.length) {
+      nextInactive.removeClass('phrase-inactive');
+      nextInactive.addClass('phrase-active');
     } else {
-      let lastRow = $('.last-row').first();
-      lastRow.css('display', 'block');
+      let firstInactive = $('.phrase-inactive.not-remembered').first();
+      if (firstInactive.length) {
+        firstInactive.removeClass('phrase-inactive');
+        firstInactive.addClass('phrase-active');
+      } else {
+        let lastRow = $('.last-row').first();
+        lastRow.css('display', 'block');
+      }
     };
   },
 
