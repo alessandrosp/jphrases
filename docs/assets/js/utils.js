@@ -19,7 +19,7 @@ var utils = {
     // Hide or show the explain button.
     $('.explain').each(function() {
       if ($(this).parents('.phrase-active').length) {
-        if () {
+        if (showExplanation) {
           $(this).css('display', 'none');
         } else {
           $(this).css('display', 'block');   
