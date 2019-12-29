@@ -50,6 +50,28 @@ var utils = {
       }
     };
   },
+  
+  markWrong: function() {
+    let active = $('.phrase-active').first();
+    let nextInactive = active.next('.phrase-inactive.not-remembered');
+    active.removeClass('phrase-active');
+    active.addClass('phrase-inactive');
+    //active.removeClass('not-remembered');
+    //active.addClass('remembered');
+    if (nextInactive.length) {
+      nextInactive.removeClass('phrase-inactive');
+      nextInactive.addClass('phrase-active');
+    } else {
+      let firstInactive = $('.phrase-inactive.not-remembered').first();
+      if (firstInactive.length) {
+        firstInactive.removeClass('phrase-inactive');
+        firstInactive.addClass('phrase-active');
+      } else {
+        let lastRow = $('.last-row').first();
+        lastRow.css('display', 'block');
+      }
+    };
+  },
 
 };
 
@@ -62,5 +84,9 @@ $(window).keydown(function(event) {
     // TODO(): We should check the Explain button is not visibile, because
     // if it is then we shouldn't let this fire off.
     utils.markCorrect();
-  } 
+  } else if (event.which == 87) {
+    // TODO(): We should check the Explain button is not visibile, because
+    // if it is then we shouldn't let this fire off.
+    utils.markWrong();
+  }
 });
