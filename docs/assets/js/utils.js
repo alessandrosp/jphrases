@@ -72,6 +72,8 @@ var utils = {
 $(window).keydown(function(event) {
   // Get more information here: https://keycode.info/
   // 69: E
+  // 82: R
+  // 87: W
   if (event.which == 69) {
     utils.toggleExplanation(showExplanation=true);
   } else if (event.which == 82) {
