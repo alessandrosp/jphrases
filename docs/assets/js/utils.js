@@ -79,10 +79,10 @@ $(window).keydown(function(event) {
   } else if (event.which == 82) {
     // TODO(): We should check the Explain button is not visibile, because
     // if it is then we shouldn't let this fire off.
-    utils.submitResponse(true);
+    utils.submitResponse(guessWasRight=true);
   } else if (event.which == 87) {
     // TODO(): We should check the Explain button is not visibile, because
     // if it is then we shouldn't let this fire off.
-    utils.submitResponse(false);
+    utils.submitResponse(guessWasRight=false);
   }
 });
